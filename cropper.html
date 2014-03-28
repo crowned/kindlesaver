@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery-cropbox</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link type="text/css" media="screen" rel="stylesheet" href="./jquery-cropbox/jquery.cropbox.css">
+  <style type="text/css">
+    body {
+      font-family : sans-serif;
+      font-size   : 13px;
+    }
+    .results {
+      font-family : monospace;
+      font-size   : 20px;
+    }
+  </style>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="./js/hammer.min.js"></script>
+  <script src="./jquery-mousewheel/jquery.mousewheel.js"></script>
+  
+  <script type="text/javascript" src="./jquery-cropbox/jquery.cropbox.js"></script>
+  <script type="text/javascript" src="./js/cropper.js"></script>
+<script>
+</script>
+
+</head>
+<body>
+
+  <img class="cropimage" alt="" src="./images/nickandsw.jpg" cropwidth="200" cropheight="200"/>
+  <div class="results">
+    <b>X</b>: <span class="cropX"></span>
+    <b>Y</b>: <span class="cropY"></span>
+    <b>W</b>: <span class="cropW"></span>
+    <b>H</b>: <span class="cropH"></span>
+  </div>
+  <div class="download">
+    <a href="#" download="crop.png">Download</a>
+  </div>
+
+  <br/>
+
+  <img class="cropimage" alt="" src="./images/dad.jpg" cropwidth="300" cropheight="200"/>
+  <div class="results">
+    <b>X</b>: <span class="cropX"></span>
+    <b>Y</b>: <span class="cropY"></span>
+    <b>W</b>: <span class="cropW"></span>
+    <b>H</b>: <span class="cropH"></span>
+  </div>
+
+  <div class="download">
+    <a href="#" download="crop.png">Download</a>
+  </div>
+
+  <br/>
+
+  <h4>Change size of every cropbox</h4>
+
+  <select id="select">
+    <option value="200" selected>200</option>
+    <option value="300">300</option>
+  </select>
+</body>
+</html>

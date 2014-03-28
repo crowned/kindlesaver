@@ -1,0 +1,81 @@
+body{
+
+}
+
+#kindle{
+	position:relative;
+	margin-left:100px;
+	margin-right:auto;
+	background-image:url('../images/kindle1.png');
+	width:999px;
+	height:1422px;
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+
+	-moz-transform: scale(0.5,0.5); 
+	-webkit-transform: scale(0.5,0.5);
+	transform: scale(0.5, 0.5);
+	
+}
+
+.cropFrame{
+	position:absolute;
+	left: 123px;
+	top: 161px;
+}
+
+.cropControls{
+	top:0;
+}
+
+.image-file, .results{
+	position:absolute;
+	display:none;
+}
+
+
+#imageLoader{
+	position:absolute;
+	top:40px;
+	left:-180px;
+	color: rgba(0,0,0,0);
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+	
+	-moz-transform: scale(2,2); 
+	-webkit-transform: scale(2,2);
+	transform: scale(2, 2);
+}
+
+.download{
+	position:absolute;
+	top:85px;
+	left:-160px;
+	
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+	
+	-moz-transform: scale(2,2); 
+	-webkit-transform: scale(2,2); 
+	transform: scale(2,2); 
+}
+
+.download a{
+	color: black;
+}
+
+
+.download a:active{
+	color: gray;
+}
+
+
+<div class="download">
+  <a href="#" download="crop.png">Download</a>
+</div>
+<label class="image-file">Image File:</label>
+<br/>
+<input type="file" id="imageLoader" name="imageLoader" />
