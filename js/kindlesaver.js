@@ -4,7 +4,41 @@ $(function () {
     imageLoader.addEventListener('change', handleImage, false);
     var canvas = document.getElementById('imageCanvas');
     var ctx = canvas.getContext('2d');
+	
+	var cropwidth = 758;
+	var cropheight = 1024;
+	var currentdevice = "paperwhite";
 
+		$('#changeDevice').click(function(e) 
+		   {
+		      e.preventDefault();
+			//clear the screen
+			$( ".cropFrame" ).remove();
+
+			if(currentdevice =="paperwhite"){
+				$('#kindle').css( "background-image", "url('../images/touch.png')" );
+				cropwidth = 600;
+				cropheight = 800;
+				currentdevice = "touch";
+			}
+			else
+			{
+				$('#kindle').css( "background-image", "url('../images/paperwhite.png')" );
+				cropwidth = 758;
+				cropheight = 1024;
+				currentdevice = "paperwhite";
+			}
+			
+
+			
+		   });
+
+	
+	function changeToPaperwhite(){
+		
+		
+	};
+	
     function grayScale(context, canvas) {
         var imgData = context.getImageData(0, 0, canvas.width, canvas.height);
             var pixels  = imgData.data;
@@ -61,8 +95,8 @@ $(function () {
 				      grayScale(ctx, canvas);
                 var domImg = new Image();
                 domImg.className  = "cropimage";
-				domImg.setAttribute("cropwidth", 758);
-				domImg.setAttribute("cropheight", 1024);
+				domImg.setAttribute("cropwidth", cropwidth);
+				domImg.setAttribute("cropheight", cropheight);
                 domImg.src = canvas.toDataURL();
                 $('#kindle').prepend(domImg);
    		cropImage();
