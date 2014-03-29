@@ -16,14 +16,14 @@ $(function () {
 			$( ".cropFrame" ).remove();
 
 			if(currentdevice =="paperwhite"){
-				$('#kindle').css( "background-image", "url('../images/touch.png')" );
+				$('#kindle').css( "background-image", "url('/images/touch.png')" );
 				cropwidth = 600;
 				cropheight = 800;
 				currentdevice = "touch";
 			}
 			else
 			{
-				$('#kindle').css( "background-image", "url('../images/paperwhite.png')" );
+				$('#kindle').css( "background-image", "url('/images/paperwhite.png')" );
 				cropwidth = 758;
 				cropheight = 1024;
 				currentdevice = "paperwhite";
