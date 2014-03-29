@@ -19,6 +19,7 @@ $(function () {
 				$('#kindle').css( "background-image", "url('/images/touch.png')" );
 				cropwidth = 600;
 				cropheight = 800;
+				$('#device').text( "Paperwhite" );
 				currentdevice = "touch";
 			}
 			else
@@ -26,6 +27,7 @@ $(function () {
 				$('#kindle').css( "background-image", "url('/images/paperwhite.png')" );
 				cropwidth = 758;
 				cropheight = 1024;
+				$('#device').text( "Touch" );
 				currentdevice = "paperwhite";
 			}
 			
