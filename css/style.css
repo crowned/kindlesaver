@@ -1,6 +1,4 @@
-body{
 
-}
 
 #kindle{
 	position:relative;
@@ -17,6 +15,21 @@ body{
 	-webkit-transform: scale(0.5,0.5);
 	transform: scale(0.5, 0.5);
 	
+}
+
+#more{
+	position:absolute;
+	top:162px;
+	left:-195px;
+	width:140px;
+	
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+	
+	-moz-transform: scale(1.5,1.5); 
+	-webkit-transform: scale(1.5,1.5);
+	transform: scale(1.5, 1.5);
 }
 
 .cropFrame{
@@ -38,7 +51,7 @@ body{
 #imageLoader{
 	position:absolute;
 	top:40px;
-	left:-180px;
+	left:-200px;
 	color: rgba(0,0,0,0);
 	-webkit-transform-origin: 0px 0px;
     -moz-transform-origin: 0px 0px;
@@ -52,7 +65,7 @@ body{
 .download{
 	position:absolute;
 	top:85px;
-	left:-160px;
+	left:-195px;
 	
 	-webkit-transform-origin: 0px 0px;
     -moz-transform-origin: 0px 0px;
@@ -63,12 +76,12 @@ body{
 	transform: scale(2,2); 
 }
 
-.download a{
+a{
 	color: black;
 }
 
 
-.download a:active{
+a:active{
 	color: gray;
 }
 
