@@ -1,5 +1,3 @@
-
-
 #kindle{
 	position:relative;
 	margin-left:100px;
@@ -40,7 +38,31 @@
 
 .cropControls{
 	top:0;
+	height:52px;
 }
+
+.cropControls span{
+	margin: 12px 0 0 15px;
+	
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+	
+	-moz-transform: scale(2,2); 
+	-webkit-transform: scale(2,2);
+	transform: scale(2, 2);
+}
+
+.cropControls a{
+	margin: 7px 23px 0 0px;
+	-webkit-transform-origin: 0px 0px;
+    -moz-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+	
+	-moz-transform: scale(2,2); 
+	-webkit-transform: scale(2,2);
+	transform: scale(2, 2);
+	}
 
 .image-file, .results{
 	position:absolute;
